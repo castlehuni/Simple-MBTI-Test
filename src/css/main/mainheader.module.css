@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.Mainheader{
+    display: flex;
+    background-color: black;
+    color: rgb(225, 156, 26);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+.Mainheader p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.Adminbtn{
+    border: 2px solid rgb(225, 156, 26);
+    background-color: black;
+    color: rgb(225, 156, 26);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+}

@@ -1,12 +1,13 @@
-import { useState } from "react";
+import React from "react";
 import MainHeader from "./Mainheader";
 import MainFooter from "./MainFooter";
+import MainChMBTI from "./MainChMBTI";
 
 function MBTImain(){
     return(
         <>
             <MainHeader/>
-            <h2>메인임</h2>
+            <MainChMBTI/>
             <MainFooter/>
         </>
     )

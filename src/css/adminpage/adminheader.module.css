@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.Adminheader{
+    display: flex;
+    background-color: black;
+    color: #FFCB42;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+.Adminheader p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.Homebtn{
+    border: 2px solid #FFCB42;
+    background-color: black;
+    color: #FFCB42;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+}

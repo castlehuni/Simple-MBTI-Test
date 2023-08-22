@@ -1,14 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import ResultHeader from "./ResultHeader";
+import ShowResult from "./ShowResult";
+import ResultFooter from "../MainPage/MainFooter";
 
 function MBTIresult(){
-    const {mbti} = useParams();
-    console.log(mbti);
     return(
         <div>
-            <h2>result 페이지입니다</h2>
-            <p>{mbti}</p>
+            <ResultHeader />
+            <ShowResult />
+            <ResultFooter/>
         </div>
     );
 }
-export default MBTIresult;
+export default MBTIresult

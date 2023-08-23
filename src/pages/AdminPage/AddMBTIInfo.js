@@ -76,10 +76,24 @@ function AddMBTIInfo(){
         console.log(e.target.value);
     }
 
-    const mbti = IorE + SorN + ForT + JorP;
-    console.log(mbti);
+    const newMBTI = IorE + SorN + ForT + JorP;
+    console.log(newMBTI);
 
     const navigate = useNavigate();
+
+    //서버로 post하는 함수
+    const sendNewMBTIData = async () => {
+        try{
+            const response = await axios.post('로컬주소를 입력해주세요/mbti',{ //로컬주소로 입력해주세요 부분에 로컬 주소 입력해주시면 되여
+                "mbti": newMBTI,
+                "info": newInfo
+            });
+            alert("새로운 MBTI 정보 추가 성공! 홈으로 이동합니다.");
+            navigate('/');
+        }catch(err){
+            console.log(err)
+        }
+    };
 
     return(
         <div>
@@ -165,7 +179,7 @@ function AddMBTIInfo(){
                 </div>
             </div>
             <div className={addmbtiinfoStyled.CheckMBTIArea}>
-                <button>MBTI 추가</button>
+                <button onClick={sendNewMBTIData}>MBTI 추가</button>
             </div>
         </div>
     );
